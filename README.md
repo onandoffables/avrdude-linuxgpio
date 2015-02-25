@@ -5,7 +5,7 @@ This script downloads, patches, compiles, and installs a plain, vanilla [avrdude
 
 The install script and patch enable avrdude to bitbang GPIO pins (such as on the Raspberry Pi GPIO) using the 'linuxgpio' (sysfsgpio) interface that's standard available in avrdude-6.1.
 
-The patch assumes that you want to program an AVR from the Raspberry Pi with the following connections. The numbers are Raspberry Pi BCM pin numbers, and is compatible with "Gordon's avrdude" on the Pi.
+The patch assumes that you want to program an AVR from the Raspberry Pi with the following connections. The numbers are Raspberry Pi BCM pin numbers, and are compatible with "Gordon's avrdude" on the Pi.
 
 	RESET   =  8
 	SCK     =  11
@@ -26,3 +26,7 @@ Then get this repository from github and run 'install_avrdude.sh':
 	git clone https://github.com/onandoffables/avrdude-linuxgpio
 	cd avrdude-linuxgpio
 	./install_avrdude.sh
+
+avrdude usage example:
+
+	avrdude -c linuxgpio -p atmega328p -U flash:w:blinky.hex
