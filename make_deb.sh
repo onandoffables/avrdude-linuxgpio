@@ -4,8 +4,8 @@ build=avrdude-6.1
 target=avrdude_6.1-2_armhf
 
 if [ ! -d ${build} ]; then
-	echo "No ${build} directory found. Please compile avrdude first."
-	exit 1
+	echo "No ${build} directory found. Compiling avrdude..."
+	./compile_avrdude.sh
 fi
 
 # delete old directory
