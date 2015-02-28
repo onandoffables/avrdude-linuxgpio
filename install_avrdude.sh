@@ -34,8 +34,8 @@ cd ${AVRDUDE_NAME}
 ./bootstrap
 ./configure --enable-linuxgpio=yes --prefix=/usr --sysconfdir=/etc
 make
-sudo make install
+#sudo make install
 cd ..
 
 # so we don't need sudo
-sudo chmod 4755 /usr/bin/avrdude
+#sudo chmod 4755 /usr/bin/avrdude
