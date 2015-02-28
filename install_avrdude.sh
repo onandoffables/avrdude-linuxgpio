@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#sudo apt-get install libusb-1.0-0-dev libusb-dev libftdi-dev autoconf bison flex
+#sudo apt-get install libusb-1.0-0-dev libusb-dev libftdi-dev libftdi1 libelf-dev autoconf bison flex
 
 AVRDUDE_NAME=avrdude-6.1
 
