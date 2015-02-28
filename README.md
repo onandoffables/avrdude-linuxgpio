@@ -17,9 +17,9 @@ Make sure you're up to date:
 	sudo apt-get update
 	sudo apt-get upgrade
 
-You need to install some packages to build avrdude from source:
+You need to install some packages to be able to build avrdude from source:
 
-	sudo apt-get install libusb-1.0-0-dev libusb-dev libftdi-dev autoconf bison flex
+	sudo apt-get install libusb-1.0-0-dev libusb-dev libftdi-dev libftdi1 libelf-dev autoconf bison flex
 
 Then get this repository from github and run 'install_avrdude.sh':
 
