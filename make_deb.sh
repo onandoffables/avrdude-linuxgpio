@@ -98,4 +98,4 @@ cd ..
 
 # build
 echo "Building .deb package..."
-dpkg-deb --build ${target}
+fakeroot dpkg-deb --build ${target}
