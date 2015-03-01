@@ -21,6 +21,8 @@ You need to install some packages to be able to build avrdude from source:
 
 	sudo apt-get install libusb-1.0-0-dev libftdi-dev autoconf bison flex
 
+To include libelf, also install libelf-dev. Note that you then also need to add 'libelf1 (>= 0.142)' as an extra dependency in the deb package (add in make_deb.sh).
+
 Then get this repository from github and run 'install_avrdude.sh':
 
 	git clone https://github.com/onandoffables/avrdude-linuxgpio
