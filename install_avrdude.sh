@@ -8,6 +8,7 @@ fi
 
 if [ -f ${deb} ]; then
 	sudo dpkg -i ${deb}
+	sudo apt-get install -f
 fi
 
 # so we don't need sudo
