@@ -1,0 +1,27 @@
+--- avrdude-6.2/avrdude.conf.in	2014-03-13 00:03:19.000000000 +0100
++++ avrdude.conf.in	2015-02-24 01:07:44.627539607 +0100
+@@ -1312,15 +1312,15 @@
+ #use -c?type on the command line and look for linuxgpio in the list. If it's not available
+ #you need pass the --enable-linuxgpio=yes option to configure and recompile avrdude.
+ #
+-#programmer
+-#  id    = "linuxgpio";
+-#  desc  = "Use the Linux sysfs interface to bitbang GPIO lines";
+-#  type  = "linuxgpio";
+-#  reset = ?;
+-#  sck   = ?;
+-#  mosi  = ?;
+-#  miso  = ?;
+-#;
++programmer
++  id    = "linuxgpio";
++  desc  = "Use the Linux sysfs interface to bitbang GPIO lines";
++  type  = "linuxgpio";
++  reset = 8;
++  sck   = 11;
++  mosi  = 10;
++  miso  = 9;  
++;
+ 
+ # some ultra cheap programmers use bitbanging on the 
+ # serialport.

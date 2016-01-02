@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-deb=avrdude_6.1-2_armhf.deb
+deb=avrdude_6.2-2_armhf.deb
 
 if [ ! -f ${deb} ]; then
 	./make_deb.sh
